@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import QRCode from "qrcode";
-import Settings from "./Settings";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import { useMediaQuery } from "@mui/material";
 function QRCodeComponent({ value, darkColor, lightColor, margin, ecLevel }) {
@@ -73,8 +72,6 @@ function QRCodeComponent({ value, darkColor, lightColor, margin, ecLevel }) {
           }
         }
       );
-
-      const lorem = "lorem";
     }
   }, [containerWidth, value, darkColor, lightColor, margin, ecLevel]); // Re-render when these props change
 
